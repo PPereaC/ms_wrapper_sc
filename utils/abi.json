@@ -1,0 +1,35 @@
+[
+  {
+    "inputs": [
+      { "internalType": "address", "name": "_destinatario", "type": "address" },
+      { "internalType": "address", "name": "_personaAutorizada", "type": "address" },
+      { "internalType": "uint256", "name": "_referenciaExterna", "type": "uint256" },
+      { "internalType": "uint256", "name": "_pin", "type": "uint256" },
+      { "internalType": "string", "name": "_rutaDatos", "type": "string" }
+    ],
+    "name": "registrarPedido",
+    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "_hacia", "type": "address" },
+      { "internalType": "uint256", "name": "_idDigital", "type": "uint256" }
+    ],
+    "name": "transferirPermiso",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "internalType": "uint256", "name": "referenciaExterna", "type": "uint256" },
+      { "indexed": false, "internalType": "uint256", "name": "idDigital", "type": "uint256" },
+      { "indexed": false, "internalType": "address", "name": "destinatario", "type": "address" }
+    ],
+    "name": "NuevoPedidoRegistrado",
+    "type": "event"
+  }
+]
